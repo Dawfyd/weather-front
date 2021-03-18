@@ -1,0 +1,26 @@
+.page_container {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+
+  background-color: #dce2e8;
+}
+.icon_gradiweb {
+  width: 4vmax;
+  height: 4vmax;
+  position: absolute;
+  right: 8vw;
+  top: 3vh;
+}
+.container_flexbox_page {
+  position: absolute;
+  width: 80vw;
+  height: 76vh;
+  left: 10vw;
+  top: 12vh;
+  background-color: #ffffff;
+  border-radius: 3vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
