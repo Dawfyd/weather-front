@@ -5,7 +5,7 @@ import avatar_2 from "../../../assets/avatars/ava2.png";
 import avatar_3 from "../../../assets/avatars/ava3.png";
 import { Avatar } from "antd";
 
-const Forecast = () => (
+const Places = () => (
   <div className="container_places">
     <div className="container_places_flexbox">
       <p className="text_places_title">Place to</p>
@@ -59,4 +59,4 @@ const Forecast = () => (
   </div>
 );
 
-export default Forecast;
+export default Places;

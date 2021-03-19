@@ -1,5 +1,6 @@
 import React from "react";
 import rain from "../../../assets/rain.svg";
+
 const Forecast = () => (
   <div className="container_forecast">
     <div className="container_forecast_flexbox">
