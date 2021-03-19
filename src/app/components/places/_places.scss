@@ -1,8 +1,235 @@
 .container_places {
-  width: 40vw;
+  width: 35vw;
   height: 34vh;
   bottom: 4vh;
   left: 20vw;
   position: absolute;
-  background-color: #f55333;
+  background-color: #ffffff;
+}
+
+.container_places_flexbox {
+  background-color: #ffffff;
+  width: 32vw;
+  height: 34vh;
+  bottom: 0vh;
+  left: 1.5vw;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+
+@mixin text_places_mixin {
+  position: relative;
+  height: 10vh;
+  font-size: 1.8vw;
+  line-height: 2vw;
+  font-family: sans-serif;
+  font-style: normal;
+  align-items: center;
+  color: #000000;
+  margin: 0;
+  display: flex;
+}
+
+.text_places_title {
+  @include text_forecast_mixin;
+  width: 22%;
+  font-weight: bold;
+  justify-content: flex-end;
+  padding-right: 0.6vw;
+}
+.text_places {
+  @include text_forecast_mixin;
+  width: 28%;
+  font-weight: 400;
+  justify-content: flex-start;
+}
+.item_reviews {
+  @include text_forecast_mixin;
+  width: 48%;
+  font-weight: 400;
+  justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+.text_add_review {
+  position: relative;
+  height: 10vh;
+  font-size: 1.6vw;
+  line-height: 1.6vw;
+  font-family: sans-serif;
+  font-style: normal;
+  align-items: center;
+  color: #b5a8f8;
+  margin: 0;
+  display: flex;
+  width: 6%;
+  font-weight: bold;
+  justify-content: flex-end;
+  padding-right: 2%;
+}
+.text_reviews {
+  position: relative;
+  height: 10vh;
+  font-size: 1vw;
+  line-height: 1vw;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  align-items: center;
+  color: rgba(0, 0, 0, 0.4);
+  margin: 0;
+  display: flex;
+  width: 40%;
+  font-weight: bold;
+  justify-content: flex-end;
+  padding-right: 2%;
+}
+.item_reviews_avatars {
+  width: 50%;
+  height: 10vh;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: row;
+}
+.avatar {
+  position: relative;
+  display: flex;
+  width: 1.8vw;
+  height: 2vw;
+  border-radius: 0.6vw;
+  background-color: rgba(0, 0, 0, 0.1);
+  font-size: 1vw;
+  line-height: 2vw;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+}
+.ant-avatar-string {
+  margin: auto;
+  width: 0.7vw;
+}
+.container_img_places {
+  width: 47%;
+  margin-right: 3%;
+  height: 24vh;
+  display: flex;
+  border: 0;
+  border-radius: 3vh;
+  background-color: #ffffff;
+  background-image: url("../../../assets/singapore_street.jpg");
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container_flex_img {
+  height: 24vh;
+  width: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  flex-flow: wrap;
+}
+.container_img_places_short {
+  width: 95%;
+  margin-left: 5%;
+  height: 8vh;
+  display: flex;
+  border: 0;
+  border-radius: 3vh;
+  background-color: #ffffff;
+  background-image: url("../../../assets/art_science_museum.jpg");
+  background-position: 40% 65%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.container_new_places {
+  width: 95%;
+  margin-top: 3vh;
+  margin-left: 5%;
+  height: 13vh;
+  display: flex;
+  border: 0;
+  border-radius: 3vh;
+  background-color: #ffffff;
+  background-image: url("../../../assets/fountain_wealth.jpg");
+  background-position: 50% 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  justify-content: flex-end;
+}
+@mixin icon_location_size {
+  position: absolute;
+  top: 12vh;
+  left: 1.5vw;
+  height: 1.1vw;
+  width: 1.1vw;
+  margin: auto;
+}
+.icon_location_white {
+  @include icon_location_size;
+  top: 12vh;
+  left: 1.5vw;
+}
+.icon_location_white_short {
+  @include icon_location_size;
+  top: 12vh;
+  left: 18vw;
+}
+.icon_location_white_new {
+  @include icon_location_size;
+  top: 23vh;
+  left: 18vw;
+}
+@mixin text_location_mixin {
+  width: 8vw;
+  font-size: 1.1vw;
+  line-height: 1.3vw;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  align-items: center;
+  color: #ffffff;
+  margin: 0;
+  position: absolute;
+}
+.text_location_visit {
+  @include text_location_mixin;
+  top: 12vh;
+  left: 3vw;
+}
+.text_location_visit_short {
+  @include text_location_mixin;
+  top: 12vh;
+  left: 20vw;
+}
+.text_location_visit_new {
+  @include text_location_mixin;
+  top: 23vh;
+  left: 20vw;
+}
+.button_new_location {
+  display: flex;
+  width: 33%;
+  height: 13vh;
+  border: 0;
+  border-radius: 3vh;
+  background-color: #7e68e7;
+  font-size: 2.5vw;
+  line-height: 13vh;
+  font-family: serif;
+  font-weight: bold;
+  font-style: normal;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
 }

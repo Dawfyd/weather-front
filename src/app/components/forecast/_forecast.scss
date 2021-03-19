@@ -3,5 +3,146 @@
   height: 34vh;
   bottom: 4vh;
   position: absolute;
-  background-color: #f55ff4;
+  background-color: #ffffff;
+}
+.container_forecast_flexbox {
+  background-color: #ffffff;
+  width: 15vw;
+  height: 34vh;
+  bottom: 0vh;
+  left: 3.5vw;
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+.container_forecast_text {
+  background-color: #ffffff;
+  width: 100%;
+  height: 10vh;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: row;
+}
+
+@mixin text_forecast_mixin {
+  position: relative;
+  height: 10vh;
+  font-size: 1.8vw;
+  line-height: 2vw;
+  font-family: sans-serif;
+  font-style: normal;
+  align-items: center;
+  color: #000000;
+  margin: 0;
+  display: flex;
+}
+.text_forecast_title {
+  @include text_forecast_mixin;
+  width: 45%;
+  font-weight: bold;
+  justify-content: flex-end;
+  padding-right: 0.6vw;
+}
+.text_forecast {
+  @include text_forecast_mixin;
+  width: 55%;
+  font-weight: 400;
+  justify-content: flex-start;
+}
+.container_items_flex {
+  width: 100%;
+  height: 7vh;
+  background-color: #ffffff;
+  z-index: 1;
+  display: flex;
+  margin-bottom: 1vh;
+
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2vh;
+  flex-wrap: wrap;
+  flex-flow: row;
+}
+.items_flex_icon {
+  display: flex;
+  width: 20%;
+  height: 6vh;
+}
+.items_flex_weather {
+  display: flex;
+  width: 45%;
+  height: 7vh;
+  display: flex;
+  flex-wrap: wrap;
+  flex-flow: column;
+}
+@mixin text_items_mixin {
+  height: 3.5vh;
+  width: 100%;
+  display: flex;
+  margin-left: 0.5vw;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: 1.1vw;
+  line-height: 2.2vh;
+  font-family: sans-serif;
+  font-style: normal;
+}
+.text_item_day {
+  @include text_items_mixin;
+  color: #000000;
+  align-items: flex-end;
+  font-weight: bold;
+}
+.text_item_weather {
+  @include text_items_mixin;
+  color: rgba(0, 0, 0, 0.4);
+  align-items: flex-start;
+  font-weight: 400;
+}
+
+.items_flex_card {
+  display: flex;
+  width: 35%;
+  height: 7vh;
+  border: 1px solid #7e68e7;
+  border-radius: 2vh;
+  background-color: #7e68e7;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1vw;
+  line-height: 2vw;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #ffffff;
+  z-index: 2;
+}
+.items_flex_card_next {
+  display: flex;
+  width: 35%;
+  height: 7vh;
+
+  border: 1px solid #dce8f4;
+  border-radius: 2vh;
+  background-color: #dce8f4;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.1vw;
+  line-height: 2vw;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  z-index: 2;
+}
+.icon_weather {
+  height: 1.6vw;
+  width: 1.6vw;
+  margin: auto;
 }
