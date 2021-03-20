@@ -164,7 +164,7 @@ function CurrentForecast() {
             {(dailytwoTemp.min - 273.15).toFixed(0)}°
           </div>
         </div>
-        <div className="container_items_flex">
+        <div className="container_items_flex_end">
           {" "}
           <div className="items_flex_icon">
             <img
