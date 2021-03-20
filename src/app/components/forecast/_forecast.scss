@@ -66,6 +66,20 @@
   flex-wrap: wrap;
   flex-flow: row;
 }
+.container_items_flex_end {
+  width: 100%;
+  height: 7vh;
+  background-color: #ffffff;
+  z-index: 1;
+  display: flex;
+  box-shadow: 1px 1px 4px 1px rgba(0, 0, 0, 0.2);
+  border-left: 1px solid rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-radius: 2vh;
+  flex-wrap: wrap;
+  flex-flow: row;
+}
 .items_flex_icon {
   display: flex;
   width: 25%;
