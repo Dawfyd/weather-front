@@ -68,12 +68,12 @@
 }
 .items_flex_icon {
   display: flex;
-  width: 20%;
-  height: 6vh;
+  width: 25%;
+  height: 7vh;
 }
 .items_flex_weather {
   display: flex;
-  width: 45%;
+  width: 40%;
   height: 7vh;
   display: flex;
   flex-wrap: wrap;
@@ -83,7 +83,6 @@
   height: 3.5vh;
   width: 100%;
   display: flex;
-  margin-left: 0.5vw;
   justify-content: flex-start;
   text-align: center;
   font-size: 1.1vw;
@@ -142,7 +141,7 @@
   z-index: 2;
 }
 .icon_weather {
-  height: 1.6vw;
-  width: 1.6vw;
+  height: 1.7vw;
+  width: 1.7vw;
   margin: auto;
 }
