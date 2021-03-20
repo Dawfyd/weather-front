@@ -1,9 +1,8 @@
 .page_container {
   width: 100vw;
   height: 100vh;
-  position: fixed;
+  position: absolute;
   background-color: #dce2e8;
-  display: block;
 }
 .icon_gradiweb {
   width: 4vmax;
@@ -23,4 +22,32 @@
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+}
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .page_container {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    background-color: #dce2e8;
+    display: block;
+  }
+  .icon_gradiweb {
+    width: 4vmax;
+    height: 4vmax;
+    position: absolute;
+    right: 4vw;
+    top: 1.5vh;
+  }
+  .container_flexbox_page {
+    position: absolute;
+    width: 90vw;
+    height: 90vh;
+    left: 5vw;
+    top: 7vh;
+    background-color: #ffffff;
+    border-radius: 3vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 }

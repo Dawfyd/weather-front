@@ -233,3 +233,238 @@
   align-items: center;
   color: #ffffff;
 }
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .container_places {
+    width: 84vw;
+    height: 24vh;
+    top: 60vh;
+    left: 3vw;
+    position: absolute;
+    background-color: #ffffff;
+  }
+
+  .container_places_flexbox {
+    background-color: #ffffff;
+    width: 84vw;
+    height: 24vh;
+    top: 0vh;
+    left: 0vw;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+
+  @mixin text_places_mixin {
+    position: relative;
+    height: 6vh;
+    font-size: 4vw;
+    line-height: 7vh;
+    font-family: sans-serif;
+    font-style: normal;
+    align-items: center;
+    color: #000000;
+    margin: 0;
+    display: flex;
+  }
+
+  .text_places_title {
+    @include text_places_mixin;
+    width: 20%;
+    font-weight: bold;
+    justify-content: flex-end;
+    padding-right: 0.6vw;
+  }
+  .text_places {
+    @include text_places_mixin;
+    width: 14%;
+    font-weight: 400;
+    justify-content: flex-start;
+  }
+  .item_reviews {
+    @include text_places_mixin;
+    width: 65%;
+    font-weight: 400;
+    justify-content: flex-start;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+  .text_add_review {
+    position: relative;
+    height: 6vh;
+    font-size: 6vw;
+    line-height: 6vh;
+    font-family: sans-serif;
+    font-style: normal;
+    align-items: center;
+    color: #b5a8f8;
+    margin: 0;
+    display: flex;
+    width: 6%;
+    font-weight: bold;
+    justify-content: flex-end;
+    padding-right: 2%;
+  }
+  .text_reviews {
+    position: relative;
+    height: 6vh;
+    font-size: 3.2vw;
+    line-height: 6vh;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0;
+    display: flex;
+    width: 40%;
+    font-weight: bold;
+    justify-content: center;
+  }
+  .item_reviews_avatars {
+    width: 50%;
+    height: 6vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: row;
+  }
+  .avatar {
+    position: relative;
+    display: flex;
+    width: 6.5vw;
+    height: 6.5vw;
+    border-radius: 0.6vw;
+    background-color: rgba(0, 0, 0, 0.1);
+    font-size: 3.5vw;
+    line-height: 3.5vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    color: #ffffff;
+  }
+  .ant-avatar-string {
+    margin: auto;
+    width: 2.5vw;
+  }
+  .container_img_places {
+    width: 47%;
+    margin-right: 3%;
+    height: 18vh;
+    display: flex;
+    border: 0;
+    border-radius: 3vh;
+    background-color: #ffffff;
+    background-image: url("../../../assets/singapore_street.jpg");
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container_flex_img {
+    height: 18vh;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    flex-flow: wrap;
+  }
+  .container_img_places_short {
+    width: 95%;
+    margin-left: 5%;
+    height: 6vh;
+    display: flex;
+    border: 0;
+    border-radius: 3vh;
+    background-color: #ffffff;
+    background-image: url("../../../assets/art_science_museum.jpg");
+    background-position: 40% 65%;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .container_new_places {
+    width: 95%;
+    margin-top: 2vh;
+    margin-left: 5%;
+    height: 10vh;
+    display: flex;
+    border: 0;
+    border-radius: 3vh;
+    background-color: #ffffff;
+    background-image: url("../../../assets/fountain_wealth.jpg");
+    background-position: 50% 10%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: flex-end;
+  }
+  @mixin icon_location_size {
+    position: absolute;
+    top: 10vh;
+    height: 4vw;
+    width: 4vw;
+    margin: auto;
+  }
+  .icon_location_white {
+    @include icon_location_size;
+    top: 7vh;
+    left: 4vw;
+  }
+  .icon_location_white_short {
+    @include icon_location_size;
+    top: 7vh;
+    left: 48vw;
+  }
+  .icon_location_white_new {
+    @include icon_location_size;
+    top: 15vh;
+    left: 48vw;
+  }
+  @mixin text_location_mixin {
+    width: 25vw;
+    font-size: 3vw;
+    line-height: 3.5vw;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-style: normal;
+    align-items: center;
+    color: #ffffff;
+    margin: 0;
+    position: absolute;
+  }
+  .text_location_visit {
+    @include text_location_mixin;
+    top: 7vh;
+    left: 9vw;
+  }
+  .text_location_visit_short {
+    @include text_location_mixin;
+    top: 7vh;
+    left: 53vw;
+  }
+  .text_location_visit_new {
+    @include text_location_mixin;
+    top: 15vh;
+    left: 53vw;
+  }
+  .button_new_location {
+    display: flex;
+    width: 33%;
+    height: 10vh;
+    border: 0;
+    border-radius: 3vh;
+    background-color: #7e68e7;
+    font-size: 6vw;
+    line-height: 10vh;
+    font-family: serif;
+    font-weight: bold;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+  }
+}
