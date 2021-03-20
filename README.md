@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Relevant Information about the Project
 
 This project uses this [API REST](https://openweathermap.org/current) to check the weather forecast.
 
