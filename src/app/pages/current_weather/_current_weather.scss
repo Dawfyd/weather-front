@@ -1,9 +1,9 @@
 .page_container {
   width: 100vw;
   height: 100vh;
-  position: absolute;
-
+  position: fixed;
   background-color: #dce2e8;
+  display: block;
 }
 .icon_gradiweb {
   width: 4vmax;

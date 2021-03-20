@@ -4,9 +4,6 @@ import icon_clear from "../../../assets/clear.svg";
 import icon_rain from "../../../assets/rain.svg";
 
 function CurrentForecast() {
-  const [dailyone, setDailyOne] = useState([]);
-  const [dailytwo, setDailyTwo] = useState([]);
-  const [dailythree, setDailyThree] = useState([]);
   const [dailyoneWeather, setDailyOneWeather] = useState([]);
   const [dailytwoWeather, setDailyTwoWeather] = useState([]);
   const [dailythreeWeather, setDailyThreeWeather] = useState([]);
@@ -22,7 +19,7 @@ function CurrentForecast() {
   }, []);
   const DataAjaxForecast = async () => {
     let url =
-      "https://api.openweathermap.org/data/2.5/onecall?lat=4.3556&lon=74.0451&exclude=hourly,minutely&appid=3176402fbb821834afb3bf6529df583e";
+      "https://api.openweathermap.org/data/2.5/onecall?lat=4.3556&lon=-74.0451&exclude=hourly,minutely&appid=3176402fbb821834afb3bf6529df583e";
     const api = new XMLHttpRequest();
     api.open("GET", url, true);
     api.send();
@@ -35,9 +32,6 @@ function CurrentForecast() {
         const firstData = dataTemp.next().value;
         const secondData = dataTemp.next().value;
         const thirdData = dataTemp.next().value;
-        setDailyOne(firstData);
-        setDailyTwo(secondData);
-        setDailyThree(thirdData);
         const firstDataWeather = firstData.weather;
         const secondDataWeather = secondData.weather;
         const thirdDataWeather = thirdData.weather;
