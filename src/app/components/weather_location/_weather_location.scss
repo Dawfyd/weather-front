@@ -434,7 +434,7 @@
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 2.1vw;
+    font-size: 2vw;
     line-height: 3vh;
     font-family: sans-serif;
     font-style: normal;
@@ -444,7 +444,7 @@
   }
   .text_flex_humidity {
     @include text_location_mixin;
-    width: 38%;
+    width: 40%;
     padding-left: 2px;
   }
   .text_flex_direction {
@@ -454,7 +454,7 @@
   }
   .text_flex_speed {
     @include text_location_mixin;
-    width: 29%;
+    width: 27%;
     padding-right: 2px;
   }
   .add_location_button {
